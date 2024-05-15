@@ -4,12 +4,12 @@ Este repositório contém todos os arquivos relacionados aos meus estudos em Pyt
 
 ## Sumário
 
-- [Branches](https://github.com/pricmendes/estudosPython/branches)
-- [Vetores](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/README.md?plain=1#L14)
-- [Matrizes](#matrizes)
-- [Pilha](#pilha)
-- [Fila](#fila)
-- [Delta](#delta)
+- [Branches](https://github.com/pricmendes/estudosPython/blob/82ca87fdcd06b72e47b5e4172b7b94b5bde1adaa/README.md?plain=1#L14)
+- [Vetores](https://github.com/pricmendes/estudosPython/blob/82ca87fdcd06b72e47b5e4172b7b94b5bde1adaa/README.md?plain=1#L20)
+- [Matrizes](https://github.com/pricmendes/estudosPython/blob/82ca87fdcd06b72e47b5e4172b7b94b5bde1adaa/README.md?plain=1#L26)
+- [Pilha](https://github.com/pricmendes/estudosPython/blob/82ca87fdcd06b72e47b5e4172b7b94b5bde1adaa/README.md?plain=1#L32)
+- [Fila](https://github.com/pricmendes/estudosPython/blob/82ca87fdcd06b72e47b5e4172b7b94b5bde1adaa/README.md?plain=1#L40)
+- [Delta](https://github.com/pricmendes/estudosPython/blob/82ca87fdcd06b72e47b5e4172b7b94b5bde1adaa/README.md?plain=1#L46)
 
 ### Branches:
 Aqui estão organizados os diferentes aspectos dos meus estudos em Python, cada branch pode conter uma área específica de estudo ou um projeto separado.
