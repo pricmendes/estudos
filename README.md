@@ -66,8 +66,8 @@ Scripts variados que não se encaixam diretamente nas categorias acima, mas são
 Sinta-se à vontade para explorar o repositório e acompanhar meu progresso nos estudos de Python. 
 Sugestões e feedbacks são sempre bem-vindos!
 
-📧 E-mail: [priscm.n@gmail.com](mailto:priscm.n@gmail.com)  
-📱 WhatsApp: [+55 11 96279-1050](https://wa.me/551162791050)
+📧 E-mail: [pricdados@gmail.com](mailto:pricdados@gmail.com)  
+
 
 ---
 <a name="final"></a>
