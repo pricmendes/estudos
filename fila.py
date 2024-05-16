@@ -2,12 +2,12 @@ class Fila:
 	def __init__(self):
 		# Inicializa uma lista vazia para representar a fila
 		self.fila = []
-	def enqueue(self, item):
+	def enqueue(self, item): #(enqueue = enfileirar)
 		# Adiciona um item ao final da fila
 		self.fila.append(item)
 		print(f"{item} foi adicionado à fila.")
 
-	def dequeue(self):
+	def dequeue(self): #(dequeue = desenfileirar)
 		# Remove e retorna o item do ínicio da fila
 
 		if not self.fila_vazia():
@@ -45,3 +45,13 @@ fila.mostrar_fila()
 fila.dequeue()
 fila.dequeue()
 fila.dequeue() # Tentativa de remover de uma fila vazia
+
+# saída print: 1 foi adicionado à fila.
+# saída print: 2 foi adicionado à fila.
+# saída print: 3 foi adicionado à fila.
+# saída print: Fila atual:  [1, 2, 3]
+# saída print: 1 foi removido da fila.
+# saída print: Fila atual:  [2, 3]
+# saída print: 2 foi removido da fila.
+# saída print: 3 foi removido da fila.
+# saída print: A fila está vazia. Nenhum item para remover.

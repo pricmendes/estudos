@@ -4,6 +4,7 @@ def delta(a, b, c):
 def equacao(a,b,c):
 	
 	resultadoDelta = delta(a, b, c)
+	print("Delta calculado: {}".format(resultadoDelta))
 	if resultadoDelta < 0:
 		return "Não possui resultados reais"
 	else:
@@ -35,3 +36,14 @@ def main():
 		print("O valor informado não é inteiro")
 
 main()
+
+
+# saída print: Cálculo da equação do 2º grau
+# saída print:  ax² + bx + c = 0
+# saída print: 
+# saída print: 
+# saída print: Informe o valor de 'a':6
+# saída print: Informe o valor de 'b':8
+# saída print: Informe o valor de 'c':10
+# saída print: Delta calculado: -176
+# saída print: Não possui resultados reais

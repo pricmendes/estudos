@@ -24,5 +24,5 @@ minha_pilha.push("Java")
 minha_pilha.pop()
 minha_pilha.push("C++")
 
-print(minha_pilha.top())  # Output: C++
+print(minha_pilha.top())  # S: C++
 

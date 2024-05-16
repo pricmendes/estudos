@@ -40,7 +40,8 @@ class inicializaPilha:
 			if opcao =="1":
 				self.incluirElemento()
 			elif opcao == "2":
-				self.removerElementos()
+				self.removerElementos() # LIFO, último a entrar é o primeiro a sair
+
 			elif opcao == "3":
 				self.imprimirPilha()
 			elif opcao == "4":
@@ -51,3 +52,113 @@ class inicializaPilha:
 				print("Opção inválida\n\n")
 
 inicializaPilha = inicializaPilha()
+
+
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 1
+# saída print: Informe o valor a ser incluído
+# saída print: teste
+# saída print: Elemento incluido
+# saída print: 
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 1
+# saída print: Informe o valor a ser incluído
+# saída print: 20
+# saída print: Elemento incluido
+# saída print: 
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 1
+# saída print: Informe o valor a ser incluído
+# saída print: abc123
+# saída print: Elemento incluido
+# saída print: 
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 3
+# saída print: 
+# saída print:  Imprimindo conteúdo da pilha
+# saída print: 
+# saída print: 
+# saída print: Índice Lógico   Índice Real     Elemento            
+# saída print: 0               2               abc123              
+# saída print: 1               1               20                  
+# saída print: 2               0               teste               
+# saída print: 
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 2
+# saída print: Elemento removido
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 3
+# saída print: 
+# saída print:  Imprimindo conteúdo da pilha
+# saída print: 
+# saída print: 
+# saída print: Índice Lógico   Índice Real     Elemento            
+# saída print: 0               1               20                  
+# saída print: 1               0               teste               
+# saída print: 
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 4
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 2
+# saída print: Elemento removido
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 3
+# saída print: 
+# saída print:  Imprimindo conteúdo da pilha
+# saída print: 
+# saída print: 
+# saída print: Índice Lógico   Índice Real     Elemento            
+# saída print: 0               10              540                 
+# saída print: 1               9               613                 
+# saída print: 2               8               4605                
+# saída print: 3               7               2457                
+# saída print: 4               6               4626                
+# saída print: 5               5               1458                
+# saída print: 6               4               4545                
+# saída print: 7               3               1274                
+# saída print: 8               2               1611                
+# saída print: 9               1               20                  
+# saída print: 10              0               teste               
+# saída print: 
+# saída print: 1 - Incluir elemento na pilha
+# saída print: 2 - Retirar elemento da pilha
+# saída print: 3 - Exibir os elementos da pilha
+# saída print: 4 - Incluir vários elementos na pilha
+# saída print: 0 - Deseja sair?
+# saída print: 0

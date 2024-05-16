@@ -28,3 +28,27 @@ def executarAplicacao():
 	print("------------------")
 
 executarAplicacao()
+
+
+# saída print: Exemplo de Matriz de duas dimensões (vetor bidimensional):
+# saída print: Bidimensional Valor [ 0 ,  0 ]:  1
+# saída print: Bidimensional Valor [ 0 ,  1 ]:  2
+# saída print: Bidimensional Valor [ 0 ,  2 ]:  3
+# saída print: Bidimensional Valor [ 0 ,  3 ]:  4
+# saída print: Bidimensional Valor [ 1 ,  0 ]:  9
+# saída print: Bidimensional Valor [ 1 ,  1 ]:  8
+# saída print: Bidimensional Valor [ 1 ,  2 ]:  7
+# saída print: Bidimensional Valor [ 1 ,  3 ]:  6
+# saída print: ------------------
+# saída print: 
+# saída print: 
+# saída print: Exemplo de Matriz de três dimensões (vetor tridimensional):
+# saída print: Tridimensional Valor [ 0 , 0 , 0 ]:  1
+# saída print: Tridimensional Valor [ 0 , 0 , 1 ]:  2
+# saída print: Tridimensional Valor [ 0 , 1 , 0 ]:  4
+# saída print: Tridimensional Valor [ 0 , 1 , 1 ]:  3
+# saída print: Tridimensional Valor [ 1 , 0 , 0 ]:  9
+# saída print: Tridimensional Valor [ 1 , 0 , 1 ]:  8
+# saída print: Tridimensional Valor [ 1 , 1 , 0 ]:  4
+# saída print: Tridimensional Valor [ 1 , 1 , 1 ]:  5
+# saída print: ------------------
