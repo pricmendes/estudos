@@ -1,57 +1,38 @@
-class Fila:
+from collections import deque
+from typing import Deque
+
+
+class Fila(object):
+	# Inicializa os atributos
 	def __init__(self):
-		# Inicializa uma lista vazia para representar a fila
-		self.fila = []
-	def enqueue(self, item): #(enqueue = enfileirar)
-		# Adiciona um item ao final da fila
-		self.fila.append(item)
-		print(f"{item} foi adicionado à fila.")
+		# Deque define o tipo de coleção da fila, está notado que irá receber apenas elemento do tipo "int"
+		self.elementos: Deque[int]
+		# Inicializa o objeto da coleção de fila
+		self.elementos = deque()
 
-	def dequeue(self): #(dequeue = desenfileirar)
-		# Remove e retorna o item do ínicio da fila
+	def incluirNaFila(self, elemento):
+		# Inclui os elementos na fila
+		self.elementos.append(elemento)
 
-		if not self.fila_vazia():
-			item = self.fila.pop(0)
-			print(f"{item} foi removido da fila.")
-			return item
+	# Método criado para facilitar a inclusão de vários elementos
+	def incluirMuitosNaFila(self, variosElementos: list):
+		for elemento in variosElementos:
+			self.elementos.append(elemento)
 
-		else:
-			print("A fila está vazia. Nenhum item para remover.")
-			return None
+	def retirarDaFila(self):
+		# Retira um elemento da fila
+		return self.elementos.popleft()
 
-	def fila_vazia(self):
-		# Verifica se a fila está vazia
-		return len(self.fila) == 0
+	# Reescrevendo o método para recuperar a quantidade de elementos
+	def __len__(self):
+		return len(self.elementos)
 
-	def tamanho(self):
-		# Retorna o tamanho da fila
-		return len(self.fila)
+	# Reescrevendo o método para retornar o objeto como caracteres
+	def __str__(self):
+		retorno: str = "\n"
+		for elemento in self.elementos:
+			indice = self.elementos.index(elemento)
+			retorno += str(indice) + " - " + str(elemento)
+			retorno += "\n"
 
-	def mostrar_fila(self):
-		# Exibe todos os elementos da fila
-		print("Fila atual: ", self.fila)
-
-
-# Demonstração de uso da fila
-fila = Fila()
-fila.enqueue(1)
-fila.enqueue(2)
-fila.enqueue(3)
-fila.mostrar_fila()
-
-fila.dequeue()
-fila.mostrar_fila()
-
-fila.dequeue()
-fila.dequeue()
-fila.dequeue() # Tentativa de remover de uma fila vazia
-
-# saída print: 1 foi adicionado à fila.
-# saída print: 2 foi adicionado à fila.
-# saída print: 3 foi adicionado à fila.
-# saída print: Fila atual:  [1, 2, 3]
-# saída print: 1 foi removido da fila.
-# saída print: Fila atual:  [2, 3]
-# saída print: 2 foi removido da fila.
-# saída print: 3 foi removido da fila.
-# saída print: A fila está vazia. Nenhum item para remover.
+		return retorno
