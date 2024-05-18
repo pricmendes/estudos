@@ -50,6 +50,8 @@ Scripts relacionados ao conceito de filas (queue) em Python, incluindo operaçõ
 
 #### Arquivos:
 - [`fila.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/fila.py)
+- [`inicializaFila.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/inicializaFila.py)
+- [`fila2.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/fila2.py)
 - [`filaComLista.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/filaComLista.py)
   
     [Voltar ao início](#) | [Ir ao final](#final)
