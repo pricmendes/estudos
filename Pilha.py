@@ -1,4 +1,4 @@
-class Pilha(object):
+class Pilha(object): # Pilha - LIFO (último a entrar é o primeiro a sair)
 	# Inicializa a pilha
 	def __init__(self):
 		self.elementos = []

@@ -2,7 +2,7 @@ from collections import deque
 from typing import Deque
 
 
-class Fila(object):
+class Fila(object): # Fila FIFO (primeiro a entrar é o primeiro a sair)
 	# Inicializa os atributos
 	def __init__(self):
 		# Deque define o tipo de coleção da fila, está notado que irá receber apenas elemento do tipo "int"
