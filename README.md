@@ -53,13 +53,38 @@ Scripts relacionados ao conceito de filas (queue) em Python, incluindo operaçõ
 - [`inicializaFila.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/inicializaFila.py)
 - [`fila2.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/fila2.py)
 - [`filaComLista.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/filaComLista.py)
-- [`elemento_lista.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/elemento_lista.py)
-- [`lista_ligada.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/lista_ligada.py)
+
+  
 - [`aplicacao_loja.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/aplicacao_loja.py)
+  - [`lista_ligada.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/lista_ligada.py)
+    - [`elemento_lista.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/elemento_lista.py)
+
+- [`aplicacao_loja_2.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/aplicacao_loja_2.py)
+  - [`lista_duplamente_ligada.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/lista_duplamente_ligada.py)
+    - [`elemento_lista_2.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/elemento_lista_2.py)
+ 
   
     [Voltar ao início](#) | [Ir ao final](#final)
 
-### Delta
+### Grafos
+Aqui irá conter algumas estruturas matemáticas usadas para modelar relações entre objetos, consistindo em vértices (nós) conectados por arestas (linhas). São muito utilizados em Logística e análises de redes sociais.
+
+#### Arquivos:
+- [`grafo_defaultdict.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_defaultdict.py)
+  - [`Grafo.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/Grafo.py)
+
+- [`grafo_explicito.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_explicito.py)
+- [`grafo implícito.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_implicito.py)
+- [`grafo_matplotlib_digraph.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib_digraph.py)
+- [`grafo_matplotlib.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib.py)
+- [`grafo_matplotlib2.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib2.py)
+- [`grafo_networkx.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_networkx.py)
+- [`grafo amigos.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_amigos.py)
+- [`primeiro grafo.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/primeiro_grafo.py)
+ 
+    [Voltar ao início](#) | [Ir ao final](#final)  
+
+### Diversos
 Scripts variados que não se encaixam diretamente nas categorias acima, mas são importantes para o meu aprendizado.
 
 #### Arquivos:
