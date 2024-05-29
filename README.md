@@ -9,7 +9,7 @@ Este repositório contém todos os arquivos relacionados aos meus estudos em Pyt
 - [Matrizes](#matrizes)
 - [Pilha](#pilha)
 - [Fila](#fila)
-- [Vetores](#vetores)
+- [Grafos](#grafos)
 - [Diversos](#diversos)
 
 ### Branches:
