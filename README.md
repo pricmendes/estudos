@@ -78,7 +78,7 @@ Aqui irá conter algumas estruturas matemáticas usadas para modelar relações 
 - [`grafo implícito.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_implicito.py)
 - [`grafo_matplotlib_digraph.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib_digraph.py)
 - [`grafo_matplotlib.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib.py)
-- [`grafo_matplotlib2.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib2.py)
+- [`grafoBuscaProfundidade.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafoBuscaProfundidade.py)
 - [`grafo_networkx.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_networkx.py)
 - [`grafo amigos.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_amigos.py)
 - [`primeiro grafo.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/primeiro_grafo.py)
