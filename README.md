@@ -9,7 +9,8 @@ Este repositório contém todos os arquivos relacionados aos meus estudos em Pyt
 - [Matrizes](#matrizes)
 - [Pilha](#pilha)
 - [Fila](#fila)
-- [Delta](#delta)
+- [Vetores](#vetores)
+- [Diversos](#diversos)
 
 ### Branches:
 Aqui estão organizados os diferentes aspectos dos meus estudos em Python, cada branch pode conter uma área específica de estudo ou um projeto separado.
