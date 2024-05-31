@@ -9,7 +9,6 @@ Repositório contendo todos os arquivos relacionados aos meus estudos de Estrutu
 - [Pilha](#pilha)
 - [Fila](#fila)
 - [Grafos](#grafos)
-- [Diversos](#diversos)
 
 ### Vetores
 Contém scripts relacionados ao estudo de vetores em Python. Exemplos práticos e exercícios que abordam operações com vetores.
