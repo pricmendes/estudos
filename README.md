@@ -6,7 +6,7 @@ Este repositório contém todos os arquivos relacionados aos meus estudos em Pyt
 
 Aqui estão organizados os diferentes aspectos dos meus estudos em Python, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
 
-  - [Estrutura de Dados](https://github.com/pricmendes/estudosPython/edit/main/Estrutura_de_Dados.md)
+  - [Estrutura de Dados](https://github.com/pricmendes/estudosPython/tree/bdbd1adb14eaf93f9b6eb1a47dafd3f7cb5516e0)
 
     [Voltar ao início](#) | [Ir ao final](#final)
 
