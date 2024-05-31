@@ -61,19 +61,21 @@ Scripts relacionados ao conceito de filas (queue) em Python, incluindo operaçõ
 Aqui irá conter algumas estruturas matemáticas usadas para modelar relações entre objetos, consistindo em vértices (nós) conectados por arestas (linhas). São muito utilizados em Logística e análises de redes sociais.
 
 #### Arquivos:
+
+- [`primeiro grafo.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/primeiro_grafo.py)
 - [`grafo_defaultdict.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_defaultdict.py)
   - [`Grafo.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/Grafo.py)
 
 - [`grafo_explicito.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_explicito.py)
 - [`grafo implícito.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_implicito.py)
+- [`grafo amigos.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_amigos.py)
+- [`grafo_networkx.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_networkx.py)
 - [`grafo_matplotlib_digraph.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib_digraph.py)
 - [`grafo_matplotlib.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_matplotlib.py)
 - [`grafoBuscaProfundidade.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafoBuscaProfundidade.py)
 - [`grafoBuscaLargura.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafoBuscaLargura.py)
-- [`grafo_networkx.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_networkx.py)
-- [`grafo amigos.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafo_amigos.py)
-- [`primeiro grafo.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/primeiro_grafo.py)
- 
+- [`grafoCaminhosPossiveis.py`](https://github.com/pricmendes/estudosPython/blob/vetores_matrizes/grafoCaminhosPossiveis.py)
+  
     [Voltar ao início](#) | [Ir ao final](#final)  
 
 
