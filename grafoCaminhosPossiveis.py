@@ -60,8 +60,8 @@ possibilidades = []
 G = nx.DiGraph()
 criarGrafo()
 
-verticePartida = "A"
-verticeDestino = "D"
+verticePartida = "A" # sair desse vértice e ir para o vértice destino com menor caminho possível
+verticeDestino = "D" # vértice destino
 
 dijkstra(G, verticePartida, verticeDestino)
 print("\nRastreio: ", encontrado["rastro"])
