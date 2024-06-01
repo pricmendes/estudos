@@ -46,7 +46,6 @@ def criarGrafo():
         G.add_edge(n1, n2, length = labels[(n1, n2)], color = "black", weight = labels[(n1, n2)])
     G.add_nodes_from(vertices, color = "gray")
     posicionamento = nx.planar_layout(G)
-    # nx.draw_networkx_edge_labels(G, posicionamento, edge_labels = nx.get_edge_attributes(G, "length"), font_color = "blue")
     nx.draw_networkx_edge_labels(G, posicionamento, edge_labels=nx.get_edge_attributes(G, "length"), font_color="blue")
     nx.draw(G, with_labels = True, pos = posicionamento)
     plt.show()
@@ -71,6 +70,12 @@ print("\nDistância Percorrida: ", encontrado["distancia"])
 print("\nBiblioteca Networkx")
 print("\nRastreio na biblioteca: ", nx.shortest_path(G, verticePartida, verticeDestino, "length"))
 print("\nDistância Percorrida: ", nx.shortest_path_length(G, verticePartida, verticeDestino, "length"))
+
+
+# Função criarGrafo() define um grafo direcionado com arestas, rótulos e vértices.
+# Função dijkstra() executa o algoritmo de Dijkstra para encontrar o menor caminho em um grafo.
+# Usa uma função recursiva (caminhosPossiveis) para encontrar todos os caminhos possíveis entre dois vértices.
+# Compara a distância de cada caminho e armazena o caminho mais curto encontrado.
 
 
 # Output:
