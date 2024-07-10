@@ -11,6 +11,11 @@ class DbConnectionHandler: # criação da classe
         self.__conn = conn # deixa a conexão aqui que está associado ao atributo da classe acima
 
     def get_connection(self) -> Connection:
+        if self.__conn is None:
+            self.connect()  # Garante que a conexão seja estabelecida se ainda não foi
         return self.__conn # retorna um tipo conexão em sqlite
     
 db_connection_handler = DbConnectionHandler() # para ter uma única conexão no projeto todo / improta o objeto que já tem a conexão direta com o banco
+db_connection_handler.connect() # Inicialize o handler e conecte-se ao banco de dados
+
+

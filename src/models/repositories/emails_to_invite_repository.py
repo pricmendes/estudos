@@ -6,7 +6,7 @@ class EmailsToInviteRepository:
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn # agora conseguimos usar a conexão do banco de dados com o um atributo da nossa classe
 
-    def registry_email(self, emails_infos: Dict) -> None:
+    def registry_email(self, email_infos: Dict) -> None:
         cursor = self.__conn.cursor() # pega a conexão e tira um cursor da nossa conexão
         cursor.execute( # aspas triplas servem para possibilitar colocar uma string de sql com espaçamento de dar uma linha a mais 
             ''' 
@@ -15,9 +15,9 @@ class EmailsToInviteRepository:
                 VALUES
                     (?, ?, ?)
             ''', (
-                emails_infos["id"],
-                emails_infos["trip_id"],
-                emails_infos["email"]
+                email_infos["id"],
+                email_infos["trip_id"],
+                email_infos["email"]
             )
         )
         self.__conn.commit() # executa com o cursor acima e depois comita com esse comando
