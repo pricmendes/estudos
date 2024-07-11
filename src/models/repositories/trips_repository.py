@@ -11,7 +11,7 @@ class TripsRepository:
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn # agora conseguimos usar a conexão do banco de dados com o um atributo da nossa classe
 
-    def create_trip(self, trips_infos: Dict) -> None:
+    def create_trip(self, trip_infos: Dict) -> None:
         cursor = self.__conn.cursor() # pega a conexão e tira um cursor da nossa conexão
         cursor.execute( # aspas triplas servem para possibilitar colocar uma string de sql com espaçamento de dar uma linha a mais 
             ''' 
@@ -20,12 +20,12 @@ class TripsRepository:
                 VALUES
                     (?, ?, ?, ?, ?, ?)
             ''', (
-                trips_infos["id"],
-                trips_infos["destination"],
-                trips_infos["start_date"],
-                trips_infos["end_date"],
-                trips_infos["owner_name"],
-                trips_infos["owner_email"]
+                trip_infos["id"],
+                trip_infos["destination"],
+                trip_infos["start_date"],
+                trip_infos["end_date"],
+                trip_infos["owner_name"],
+                trip_infos["owner_email"]
             )
         )
         self.__conn.commit() # executa com o cursor acima e depois comita com esse comando

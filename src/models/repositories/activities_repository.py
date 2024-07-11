@@ -2,39 +2,39 @@ from typing import Dict, Tuple, List # permite especificar o tipo de dado  que c
 from sqlite3 import Connection
 import sqlite3
 
-class LinksRepository:
+class ActivitiesRepository:
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn # agora conseguimos usar a conexão do banco de dados com o um atributo da nossa classe
 
-    def registry_link(self, link_infos: Dict) -> None:
+    def registry_activity(self, activity_infos: Dict) -> None:
         cursor = self.__conn.cursor() # pega a conexão e tira um cursor da nossa conexão
         cursor.execute( # aspas triplas servem para possibilitar colocar uma string de sql com espaçamento de dar uma linha a mais 
             ''' 
-                INSERT INTO links
-                    (id, trip_id, link, title)
+                INSERT INTO activities
+                    (id, trip_id, title, occurs_at)
                 VALUES
                     (?, ?, ?, ?)
             ''', (
-                link_infos["id"],
-                link_infos["trip_id"],
-                link_infos["link"],
-                link_infos["title"]
+                activity_infos["id"],
+                activity_infos["trip_id"],
+                activity_infos["title"],
+                activity_infos["occurs_at"]
             )
         )
         self.__conn.commit() # executa com o cursor acima e depois comita com esse comando
 
 # buscando elementos no nosso banco de dados
-    def find_link_from_trip(self, trip_id: str) -> List[Tuple]: # id como string / e demonstra que o retorno é uma Lista de Tuplas
+    def find_by_trip_id(self, trip_id: str) -> List[Tuple]: # id como string / e demonstra que o retorno é uma Lista de Tuplas
         cursor = self.__conn.cursor() # é o cursor que mexe no nosso banco
         cursor.execute(
             ''' 
-                SELECT * FROM links WHERE trip_id = ?
+                SELECT * FROM activities WHERE trip_id = ?
             ''', 
             (trip_id,) # id da viagem
             
         )
-        links = cursor.fetchall() # fetchone busca apenas 1 elemento no nosso banco - fetchmany ou fetchall busca vários elementos
-        return links # seleciona um email através do id da viagem
+        activities = cursor.fetchall() # fetchone busca apenas 1 elemento no nosso banco - fetchmany ou fetchall busca vários elementos
+        return activities # seleciona um email através do id da viagem
 
 
     
