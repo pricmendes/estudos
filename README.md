@@ -27,7 +27,7 @@ Um projeto em Python usando Flask para gerenciar viagens, participantes, ativida
     - *[trip_finder.py](https://github.com/pricmendes/estudosPython/blob/trip/src/controllers/trip_finder.py)*: Buscar viagens.
 
   - **[drivers](https://github.com/pricmendes/estudosPython/tree/trip/src/drivers)/**: Contém drivers para funcionalidades específicas.  
-    - *email_sender.py(https://github.com/pricmendes/estudosPython/blob/trip/src/drivers/email_sender.py)*: Driver para envio de e-mails.
+    - *[email_sender.py](https://github.com/pricmendes/estudosPython/blob/trip/src/drivers/email_sender.py)*: Driver para envio de e-mails.
 
   - **[routes](https://github.com/pricmendes/estudosPython/tree/trip/src/main/routes)/**: Definição das rotas da API.  
     - *[trips_routes.py](https://github.com/pricmendes/estudosPython/blob/trip/src/main/routes/trips_routes.py)*: Rotas relacionadas a viagens.
