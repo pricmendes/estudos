@@ -15,6 +15,7 @@ class Product(db.Model):
     price = db.Column(db.Float, nullable=False)
     description = db.Column(db.Text, nullable=True)
 
+# cadastrar produto
 @app.route("/api/products/add", methods=["POST"])
 def add_product():
     #inserção do payload
@@ -26,6 +27,7 @@ def add_product():
         return jsonify({"message": f"Product added successfully - {product} "})
     return jsonify({"message": "Invalid product data"}), 400
 
+# deletar produto
 @app.route("/api/products/delete/<int:product_id>", methods=["DELETE"])
 def delete_product(product_id):
     # recuperando o produto da base de dados
@@ -39,6 +41,38 @@ def delete_product(product_id):
         return jsonify({"message": f"Product deleted successfully - {product} "})
     return jsonify({"message": "Product not found"}), 404
 
+# procurar um produto
+@app.route("/api/products/<int:product_id>", methods=["GET"])
+def get_product_details(product_id):
+    product = Product.query.get(product_id)
+    if product:
+        return jsonify({
+            "id": product.id,
+            "name": product.name,
+            "price": product.price,
+            "description": product.description
+        })
+    return jsonify({"message": "Product not found"}), 404
+
+# procurar um produto
+@app.route("/api/products/update/<int:product_id>", methods=["PUT"])
+def update_product(product_id):
+    product = Product.query.get(product_id)
+    if not product:
+        return jsonify({"message": "Product not found"}), 404
+    
+    data = request.json
+    if "name" in data:
+        product.name = data["name"]
+
+    if "price" in data: 
+        product.price = data["price"]
+    
+    if "description" in data:
+        product.description = data["description"]
+
+    db.session.commit()
+    return jsonify({"message": "Product updated successfully"})     
 
 
 
