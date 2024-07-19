@@ -4,15 +4,15 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 
-app = Flask(__name__)
-app.config["SECRET_KEY"] = "Teste@123"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///ecommerce.db"
+application = Flask(__name__)
+application.config["SECRET_KEY"] = "Teste@123"
+application.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///ecommerce.db"
 
-login_manager = LoginManager(app) # gerenciamento da autenticação
-db = SQLAlchemy(app)
-login_manager.init_app(app) # recebe a aplicação
+login_manager = LoginManager(application) # gerenciamento da autenticação
+db = SQLAlchemy(application)
+login_manager.init_app(application) # recebe a aplicação
 login_manager.login_view = "login" # rota onde contém os dados para autenticar o usuário
-CORS(app) # serve para que sistemas externos possam acessar o sistema
+CORS(application) # serve para que sistemas externos possam acessar o sistema
 
 # Modelagem
 
@@ -35,7 +35,11 @@ class CartItem(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
     product_id = db.Column(db.Integer, db.ForeignKey("product.id"), nullable=False)
 
-@app.route("/login", methods=["POST"])
+@application.route("/")
+def initial():
+    return "API ESTUDOS ECOMMERCE - SEJA BEM VINDO(A)!"
+
+@application.route("/login", methods=["POST"])
 def login():
     data = request.json
     # data.get("username") uma opção para recuperar o usuário
@@ -48,7 +52,7 @@ def login():
 
     return jsonify({"message": "Unauthorized. Invalid credentials"}), 401
 
-@app.route("/logout", methods=["POST"])
+@application.route("/logout", methods=["POST"])
 @login_required
 def logout():
     logout_user()
@@ -59,7 +63,8 @@ def logout():
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-@app.route("/api/products/add", methods=["POST"])
+
+@application.route("/api/products/add", methods=["POST"])
 @login_required
 def add_product():
     #inserção do payload
@@ -68,11 +73,11 @@ def add_product():
         product = Product(name = data["name"], price = data["price"], description = data.get("description", "")) # o método data["name"] se não achar o valor ele irá apresentar um erro  - o método data.get("description", "") se ele não achar ele irá entrar com os dados mesmo assim ou irá aprensetar o valor que você indicou depois do description entre ""
         db.session.add(product)
         db.session.commit()
-        return jsonify({"message": f"Product added successfully - {product} "})
+        return jsonify({"message": f"Product added successfully - {product.name} "})
     return jsonify({"message": "Invalid product data"}), 400
 
 # deletar produto
-@app.route("/api/products/delete/<int:product_id>", methods=["DELETE"])
+@application.route("/api/products/delete/<int:product_id>", methods=["DELETE"])
 @login_required
 def delete_product(product_id):
     # recuperando o produto da base de dados
@@ -83,11 +88,11 @@ def delete_product(product_id):
     if product:
         db.session.delete(product)
         db.session.commit()
-        return jsonify({"message": f"Product deleted successfully - {product} "})
+        return jsonify({"message": f"Product deleted successfully - {product.name} "})
     return jsonify({"message": "Product not found"}), 404
 
 # procurar um produto
-@app.route("/api/products/<int:product_id>", methods=["GET"])
+@application.route("/api/products/<int:product_id>", methods=["GET"])
 def get_product_details(product_id):
     product = Product.query.get(product_id)
     if product:
@@ -100,7 +105,7 @@ def get_product_details(product_id):
     return jsonify({"message": "Product not found"}), 404
 
 # procurar um produto
-@app.route("/api/products/update/<int:product_id>", methods=["PUT"])
+@application.route("/api/products/update/<int:product_id>", methods=["PUT"])
 @login_required
 def update_product(product_id):
     product = Product.query.get(product_id)
@@ -120,7 +125,7 @@ def update_product(product_id):
     db.session.commit()
     return jsonify({"message": "Product updated successfully"})
 
-@app.route("/api/products", methods = ["GET"])     
+@application.route("/api/products", methods = ["GET"])     
 def get_products():
     products = Product.query.all()
     product_list = []
@@ -135,12 +140,12 @@ def get_products():
     return jsonify(product_list)    
 
 # definindo a rota raiz(pagina inicial) e a função que será executada ao ser requisitada
-# @app.route("/")
+# @application.route("/")
 # def hello_world():
 #     return "Seja bem vindo!"
 
 # Checkout
-@app.route("/api/cart/add/<int:product_id>", methods=["POST"])
+@application.route("/api/cart/add/<int:product_id>", methods=["POST"])
 @login_required
 def add_to_cart(product_id):
 # usuário
@@ -155,7 +160,7 @@ def add_to_cart(product_id):
         return jsonify({"message": "Item added to the cart successfully"})
     return jsonify({"message": "Failed to add item to the cart"}), 400
 
-@app.route("/api/cart/remove/<int:product_id>", methods=["DELETE"])
+@application.route("/api/cart/remove/<int:product_id>", methods=["DELETE"])
 @login_required
 def remove_to_cart(product_id):
     cart_item = CartItem.query.filter_by(user_id = current_user.id, product_id = product_id).first()
@@ -166,7 +171,7 @@ def remove_to_cart(product_id):
         return jsonify({"message": "Item removed from the cart successfully"})
     return jsonify({"message": "Failed to remove item from the cart"}), 400
 
-@app.route("/api/cart", methods = ["GET"])
+@application.route("/api/cart", methods = ["GET"])
 @login_required
 def view_cart():
     # usuário
@@ -184,7 +189,7 @@ def view_cart():
                             })
     return jsonify(cart_content)
 
-@app.route("/api/cart/checkout", methods = ["POST"])
+@application.route("/api/cart/checkout", methods = ["POST"])
 @login_required
 def checkout():
     user = User.query.get(int(current_user.id))
@@ -197,4 +202,6 @@ def checkout():
                   
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    application.run(debug=True)
+
+

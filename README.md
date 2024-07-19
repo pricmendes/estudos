@@ -1,6 +1,6 @@
 # Projeto E-commerce API
 
-Gerenciamento de um e-commerce, com funcionalidades para produtos, categorias e pedidos, e armazenamento de dados em um banco de dados SQLite.
+Gerenciamento de um e-commerce, com funcionalidades para produtos e carrinho, e armazenamento de dados em um banco de dados SQLite.
 
 ## Estrutura do Projeto
 
@@ -8,7 +8,7 @@ Gerenciamento de um e-commerce, com funcionalidades para produtos, categorias e 
   Contém o banco de dados SQLite.  
   - *[ecommerce.db](https://github.com/pricmendes/estudosPython/blob/ecommerce/instance/ecommerce.db)*: Banco de dados para armazenar as informações do e-commerce.
 
-- **[app.py](https://github.com/pricmendes/estudosPython/blob/ecommerce/app.py)**  
+- **[application.py](https://github.com/pricmendes/estudosPython/blob/ecommerce/application.py)**  
   Arquivo principal da aplicação contendo as rotas e endpoints.
 
 - **[requirements.txt](https://github.com/pricmendes/estudosPython/blob/ecommerce/requirements.txt)**  
@@ -20,15 +20,39 @@ Gerenciamento de um e-commerce, com funcionalidades para produtos, categorias e 
 ## Funcionalidades
 
 - **Gerenciamento de Produtos**  
-  Adicionar, editar, buscar e remover produtos do e-commerce.
+  - Adicionar, editar, buscar e remover produtos do e-commerce.
+  - Consultar detalhes de um produto específico.
+  - Listar todos os produtos disponíveis.
 
-- **Gerenciamento de Categorias**  
-  Adicionar, editar, buscar e remover categorias de produtos.
+- **Gerenciamento de Carrinho**  
+  - Adicionar produtos ao carrinho.
+  - Remover produtos do carrinho.
+  - Visualizar itens no carrinho.
+  - Realizar checkout e limpar o carrinho.
 
-- **Gerenciamento de Pedidos**  
-  Criar, buscar e atualizar status de pedidos realizados no e-commerce.
+## Estrutura do Banco de Dados
+
+O banco de dados SQLite (`ecommerce.db`) possui três tabelas:
+
+1. **User**  
+   - `id`: Identificador do usuário.
+   - `username`: Nome de usuário.
+   - `password`: Senha do usuário.
+
+2. **Product**  
+   - `id`: Identificador do produto.
+   - `name`: Nome do produto.
+   - `price`: Preço do produto.
+   - `description`: Descrição do produto.
+
+3. **CartItem**  
+   - `id`: Identificador do item do carrinho.
+   - `user_id`: Referência ao usuário dono do carrinho.
+   - `product_id`: Referência ao produto adicionado ao carrinho.
 
 ## Observações
 
-- O projeto utiliza um banco de dados SQLite (`ecommerce.db`) para armazenar as informações.
-- A aplicação é construída em Flask e as rotas e endpoints são definidos no arquivo `app.py`.
+- A aplicação é construída em Flask e as rotas e endpoints são definidos no arquivo `application.py`.
+- A autenticação é gerenciada com Flask-Login.
+- O projeto está hospedado na AWS e pode ser acessado através do seguinte link: [http://api-ecommerce-dev.eba-wxb2vvjw.us-east-1.elasticbeanstalk.com](http://api-ecommerce-dev.eba-wxb2vvjw.us-east-1.elasticbeanstalk.com). 
+- Em algum momento a aplicação não ficará disponível mais na AWS devido custos.
