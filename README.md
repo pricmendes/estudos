@@ -7,8 +7,8 @@ Este repositório contém todos os arquivos relacionados aos meus estudos em Pyt
 Aqui estão organizados os diferentes aspectos dos meus estudos em Python, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
 
   - [Estrutura de Dados](https://github.com/pricmendes/estudosPython/blob/main/Estrutura_de_Dados.md)
-  - [Projeto Trip](https://github.com/pricmendes/estudosPython/blob/trip/README.md)
-  - [Projeto Ecommerce](https://github.com/pricmendes/estudosPython/blob/ecommerce/README.md)
+  - [API - Projeto Trip](https://github.com/pricmendes/estudosPython/blob/trip/README.md)
+  - [API - Projeto Ecommerce](https://github.com/pricmendes/estudosPython/blob/ecommerce/README.md)
 
 
 
