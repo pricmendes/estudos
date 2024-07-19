@@ -17,6 +17,9 @@ Gerenciamento de um e-commerce, com funcionalidades para produtos e carrinho, e 
 - **[.gitignore](https://github.com/pricmendes/estudosPython/blob/ecommerce/.gitignore)**  
   Arquivo para ignorar arquivos e pastas no controle de versão.
 
+- **[ecommerce-swagger-yaml.x-yaml](https://github.com/pricmendes/estudosPython/blob/ecommerce/ecommerce-swagger-yaml.x-yaml)**  
+  Documentação da API utilizando Swagger.
+
 ## Funcionalidades
 
 - **Gerenciamento de Produtos**  
@@ -50,9 +53,13 @@ O banco de dados SQLite (`ecommerce.db`) possui três tabelas:
    - `user_id`: Referência ao usuário dono do carrinho.
    - `product_id`: Referência ao produto adicionado ao carrinho.
 
+## Documentação da API
+
+A documentação da API está disponível em Swagger. Você pode visualizar a documentação completa no seguinte arquivo YAML: [ecommerce-swagger-yaml.x-yaml](https://github.com/pricmendes/estudosPython/blob/ecommerce/ecommerce-swagger-yaml.x-yaml).
+
 ## Observações
 
 - A aplicação é construída em Flask e as rotas e endpoints são definidos no arquivo `application.py`.
 - A autenticação é gerenciada com Flask-Login.
-- O projeto está hospedado na AWS e pode ser acessado através do seguinte link: [http://api-ecommerce-dev.eba-wxb2vvjw.us-east-1.elasticbeanstalk.com](http://api-ecommerce-dev.eba-wxb2vvjw.us-east-1.elasticbeanstalk.com). 
+- O projeto está hospedado na AWS e pode ser acessado através do seguinte link: [http://api-ecommerce-dev.eba-wxb2vvjw.us-east-1.elasticbeanstalk.com](http://api-ecommerce-dev.eba-wxb2vvjw.us-east-1.elasticbeanstalk.com).
 - Em algum momento a aplicação não ficará disponível mais na AWS devido custos.
