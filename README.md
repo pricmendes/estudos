@@ -9,7 +9,7 @@ Aqui estão organizados os diferentes aspectos dos meus estudos em Python, com l
   - [Estrutura de Dados](https://github.com/pricmendes/estudosPython/blob/main/Estrutura_de_Dados.md)
   - [API - Projeto Trip](https://github.com/pricmendes/estudosPython/blob/trip/README.md)
   - [API - Projeto Ecommerce](https://github.com/pricmendes/estudosPython/blob/ecommerce/README.md)
-  - [Lista de Tarfas e Outros Estudos](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/README.md)
+  - [Lista de Tarefas e Outros Estudos](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/README.md)
 
 
 
