@@ -1,30 +1,49 @@
-# Estudos em Python
+# Python Lista de Tarefas e Outros estudos:
 
-Este repositório contém todos os arquivos relacionados aos meus estudos em Python. A ideia é utilizar este espaço para praticar o que estou aprendendo e também melhorar minhas habilidades no uso do Git. Espero que, ao compartilhar meu progresso aqui, eu possa continuar me aprimorando a cada dia.
+Contém exemplos de código e módulos que abordam diversas funcionalidades e conceitos da linguagem Python, e uma lista de tarefas simples.
 
-### Repositórios:
+## Estrutura das Pastas e Arquivos:
 
-Aqui estão organizados os diferentes aspectos dos meus estudos em Python, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
+- **[excecoes.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/excecoes.py)**  
+  Exemplo de captura de exceções em Python. Demonstra o uso dos blocos `try`, `except`, `else`, e `finally` para tratamento de erros.
 
-  - [Estrutura de Dados](https://github.com/pricmendes/estudosPython/blob/main/Estrutura_de_Dados.md)
-  - [API - Projeto Trip](https://github.com/pricmendes/estudosPython/blob/trip/README.md)
-  - [API - Projeto Ecommerce](https://github.com/pricmendes/estudosPython/blob/ecommerce/README.md)
+- **[meu_modulo.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/meu_modulo.py)**  
+  Módulo personalizado com funções básicas:
+  - `saudacao(nome)`: Retorna uma mensagem de saudação.
+  - `dobro(numero)`: Retorna o dobro do número fornecido.
 
+- **[modulo_terceiro.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/modulo_terceiro.py)**  
+  Exemplo de importação e uso de um módulo de terceiros. Utiliza a biblioteca `requests` para realizar uma solicitação HTTP.
 
+- **[modulos.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/modulos.py)**  
+  Exemplo de importação de módulos padrão e personalizados:
+  - Utiliza `math` e `sqrt` para operações matemáticas.
+  - Demonstra a criação e uso de um módulo personalizado (`meu_modulo`).
 
-    [Voltar ao início](#) | [Ir ao final](#final)
+- **[sintaxes.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/sintaxes.py)**  
+  Exemplos de diferentes sintaxes e estruturas de dados em Python:
+  - **Comentários**: Um e múltiplas linhas.
+  - **Operadores de Strings**: Concatenação e formatação.
+  - **Condicionais**: Uso de `if`, `elif`, e `else`.
+  - **Listas**: Criação, manipulação e métodos.
+  - **Tuplas**: Criação e métodos.
+  - **Dicionários**: Criação, manipulação e métodos.
+  - **Loops**: Exemplos de `for` e `while`, uso de `range` e `enumerate`.
 
+# Gerenciador de Tarefas:
 
----
+- **[lista_tarefas](https://github.com/pricmendes/estudosPython/tree/lista_tarefas_e_outros/lista_tarefas)**  
+  - *[gerenciador.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/lista_tarefas/gerenciador.py)*
 
-Sinta-se à vontade para explorar o repositório e acompanhar meu progresso nos estudos de Python. 
-Sugestões e feedbacks são sempre bem-vindos!
+Este é um simples gerenciador de tarefas em Python que permite adicionar, visualizar, atualizar, completar e deletar tarefas. Gerencia uma lista de tarefas com funcionalidades básicas de CRUD (Create, Read, Update, Delete).
 
-📧 E-mail: [pricdados@gmail.com](mailto:pricdados@gmail.com)  
+## Funcionalidades:
 
-
----
-<a name="final"></a>
-
+1. **Adicionar Tarefa**: Adiciona uma nova tarefa à lista. A tarefa começa com o status de "não completada".
+2. **Visualizar Tarefas**: Exibe a lista de tarefas com o status atual de cada uma.
+3. **Atualizar Tarefa**: Permite alterar o nome de uma tarefa existente.
+4. **Completar Tarefa**: Marca uma tarefa como completada.
+5. **Deletar Tarefa**: Remove uma tarefa da lista, mas somente se a tarefa estiver marcada como completada.
+6. **Sair**: Encerra o programa.
 
 
