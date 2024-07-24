@@ -30,6 +30,9 @@ Contém exemplos de código e módulos que abordam diversas funcionalidades e co
   - **Dicionários**: Criação, manipulação e métodos.
   - **Loops**: Exemplos de `for` e `while`, uso de `range` e `enumerate`.
 
+- **[poo.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/poo.py)**  
+  Exemplos de Programação Orientada a Objetos (POO) em Python, abordando os conceitos fundamentais como classes, objetos, herança, polimorfismo, encapsulamento, abstração, herança múltipla e decoradores. Inclui exemplos práticos de cada conceito.
+
 # Gerenciador de Tarefas:
 
 - **[lista_tarefas](https://github.com/pricmendes/estudosPython/tree/lista_tarefas_e_outros/lista_tarefas)**  
@@ -45,5 +48,3 @@ Este é um simples gerenciador de tarefas em Python que permite adicionar, visua
 4. **Completar Tarefa**: Marca uma tarefa como completada.
 5. **Deletar Tarefa**: Remove uma tarefa da lista, mas somente se a tarefa estiver marcada como completada.
 6. **Sair**: Encerra o programa.
-
-
