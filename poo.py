@@ -157,7 +157,7 @@ print("Morcego amamentando:", morcego.amamentar())
 print("Morcego voando:", morcego.voar())
 
 
-# *** Decoradores **
+# *** Decoradores ** permite modificar o comportamento de funções e métodos
 from typing import Any
 def meu_decorador(func): # func é a função que queremos exectuar 
     def wrapper(): # wrapper - embrulha em volta da função que queremos executar
