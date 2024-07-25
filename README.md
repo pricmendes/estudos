@@ -33,6 +33,10 @@ Contém exemplos de código e módulos que abordam diversas funcionalidades e co
 - **[poo.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/poo.py)**  
   Exemplos de Programação Orientada a Objetos (POO) em Python, abordando os conceitos fundamentais como classes, objetos, herança, polimorfismo, encapsulamento, abstração, herança múltipla e decoradores. Inclui exemplos práticos de cada conceito.
 
+- **[jogo](https://github.com/pricmendes/estudosPython/tree/lista_tarefas_e_outros/jogo)**  
+  - *[jogo.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/jogo/jogo.py)*  
+  Exemplo de um jogo de batalha simples em Python utilizando conceitos de Programação Orientada a Objetos. Inclui classes para heróis e inimigos, com métodos para ataque e defesa.
+
 # Gerenciador de Tarefas:
 
 - **[lista_tarefas](https://github.com/pricmendes/estudosPython/tree/lista_tarefas_e_outros/lista_tarefas)**  
