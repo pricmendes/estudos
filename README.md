@@ -4,6 +4,9 @@ Contém exemplos de código e módulos que abordam diversas funcionalidades e co
 
 ## Estrutura das Pastas e Arquivos:
 
+- **[spamSimNao.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/spamSimNao.py)**  
+  Exemplo de aprendizado de máquina. Demonstra o uso do aprendizado de máquina para classificar emails como spam.
+
 - **[excecoes.py](https://github.com/pricmendes/estudosPython/blob/lista_tarefas_e_outros/excecoes.py)**  
   Exemplo de captura de exceções em Python. Demonstra o uso dos blocos `try`, `except`, `else`, e `finally` para tratamento de erros.
 
