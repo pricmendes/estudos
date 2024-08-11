@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 
-# 1. Coleta de Pistas: Carregar o conjunto de dados
+# Coleta de Pistas: Carregar o conjunto de dados
 # Exemplo fictício de dados. Quantos mais dados você incluir mais ele irá aprender a classificar como Spam.
 data = {
     'email': [
@@ -21,26 +21,26 @@ data = {
 
 df = pd.DataFrame(data)
 
-# 2. Processamento dos Dados
+# Processamento dos Dados
 vectorizer = CountVectorizer()
 X = vectorizer.fit_transform(df['email'])  # Converte o texto em uma matriz de contagem de palavras
 y = df['spam']  # Etiquetas (spam ou não spam)
 
-# 3. Divisão dos Dados
+# Divisão dos Dados
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# 4. Treinamento do Modelo
+# Treinamento do Modelo
 model = MultinomialNB()
 model.fit(X_train, y_train)
 
-# 5. Fazer Previsões
+# Fazer Previsões
 y_pred = model.predict(X_test)
 
-# 6. Acurácia do Modelo
+# Acurácia do Modelo
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Acurácia do modelo: {accuracy:.2f}')
 
-# 7. Testar com Novos E-mails
+# Testar com Novos E-mails
 novos_emails = ['Você ganhou um carro novo!', 'Lembrete: Reunião às 10h.']
 novos_emails_transformed = vectorizer.transform(novos_emails)
 previsao = model.predict(novos_emails_transformed)
@@ -57,19 +57,19 @@ for i, email in enumerate(novos_emails):
 
 # Realizado o treinamento inicial.
 
-# 1. Coleta de Pistas e carregamento do conjunto de dados.
+# 1 Coleta de Pistas e carregamento do conjunto de dados.
 
-# 2. Processamento dos Dados
+# 2 Processamento dos Dados
 
-# 3. Divisão dos Dados 
+# 3 Divisão dos Dados 
 
-# 4. Treinamento do Modelo 
+# 4 Treinamento do Modelo 
 
-# 5. Fazer Previsões
+# 5 Fazer Previsões
 
-# 6. Acurácia do Modelo para saber o quanto o modelo acertou a previsão
+# 6 Acurácia do Modelo para saber o quanto o modelo acertou a previsão
 
-# 7. Testar com Novos E-mails
+# 7 Testar com Novos E-mails
 
 # CountVectorizer: Transforma o texto dos e-mails em uma matriz numérica, onde cada coluna representa uma palavra e cada linha um e-mail.
 # MultinomialNB: Classifica o texto que será treinado nos dados de e-mails.
