@@ -14,7 +14,7 @@ data = {
         'Você foi selecionado para um prêmio incrível!',
         'Aqui está o link para nossa reunião de amanhã.',
         'Compre agora e ganhe um desconto exclusivo!',
-        'Lembrete: Reunião às 10h.'
+        'Lembrete: Reunião às 17h.'
     ],
     'spam': [1, 1, 0, 1, 0, 1, 0]  # 1: Spam, 0: Não spam
 }
