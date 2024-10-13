@@ -27,9 +27,7 @@ print(df.head())
 expected_columns = [
     'SETOR', 'CONVENIO', 'BANCO', 'CPF', 'NOME', 'SEXO', 'NASC', 'IDADE', 
     'TIPO', 'LOGRADOURO', 'NUMERO', 'COMPLEMENTO', 'BAIRRO', 'CIDADE', 
-    'UF', 'CEP', 'DDDCEL1', 'CEL1', 'PROCONCEL1', 'DDDCEL2', 'CEL2', 
-    'PROCONCEL2', 'DDDCEL3', 'CEL3', 'PROCONCEL3', 'DDDCEL4', 'CEL4', 
-    'PROCONCEL4', 'DDD1', 'FONE1', 'PROCON1', 'EMAIL1'
+    'UF', 'CEP', 'DDDCEL1', 'CEL1'
 ]
 
 # Filtrar apenas as colunas esperadas
@@ -45,25 +43,20 @@ df = df.replace({np.nan: None})
 new_records_count = 0
 existing_records_count = 0
 
-# Inserir os dados na tabela HigiNovaVida e registrar CPFs duplicados
+# Inserir os dados na tabela teste e registrar CPFs duplicados
 for index, row in df.iterrows():
     try:
         # Verificar se o CPF já existe na tabela
-        cursor.execute("SELECT COUNT(*) FROM HigiNovaVida WHERE CPF = ?", row.CPF)
+        cursor.execute("SELECT COUNT(*) FROM teste WHERE CPF = ?", row.CPF)
         if cursor.fetchone()[0] == 0:
             cursor.execute("""
-            INSERT INTO HigiNovaVida (
+            INSERT INTO teste (
                 SETOR, CONVENIO, BANCO, CPF, NOME, SEXO, NASC, IDADE, TIPO, LOGRADOURO, 
-                NUMERO, COMPLEMENTO, BAIRRO, CIDADE, UF, CEP, DDDCEL1, CEL1, PROCONCEL1, 
-                DDDCEL2, CEL2, PROCONCEL2, DDDCEL3, CEL3, PROCONCEL3, DDDCEL4, CEL4, 
-                PROCONCEL4, DDD1, FONE1, PROCON1, EMAIL1) 
+                NUMERO, COMPLEMENTO, BAIRRO, CIDADE, UF, CEP, DDDCEL1, CEL1) 
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             row.SETOR, row.CONVENIO, row.BANCO, row.CPF, row.NOME, row.SEXO, row.NASC, 
             row.IDADE, row.TIPO, row.LOGRADOURO, row.NUMERO, row.COMPLEMENTO, 
-            row.BAIRRO, row.CIDADE, row.UF, row.CEP, row.DDDCEL1, row.CEL1, 
-            row.PROCONCEL1, row.DDDCEL2, row.CEL2, row.PROCONCEL2, 
-            row.DDDCEL3, row.CEL3, row.PROCONCEL3, row.DDDCEL4, row.CEL4, 
-            row.PROCONCEL4, row.DDD1, row.FONE1, row.PROCON1, row.EMAIL1)
+            row.BAIRRO, row.CIDADE, row.UF, row.CEP, row.DDDCEL1, row.CEL1)
             
             # Incrementar o contador de novos registros
             new_records_count += 1
@@ -72,16 +65,11 @@ for index, row in df.iterrows():
             cursor.execute("""
             INSERT INTO CPFs_Duplicados (
                 CPF, SETOR, CONVENIO, BANCO, NOME, SEXO, NASC, IDADE, TIPO, LOGRADOURO, 
-                NUMERO, COMPLEMENTO, BAIRRO, CIDADE, UF, CEP, DDDCEL1, CEL1, PROCONCEL1, 
-                DDDCEL2, CEL2, PROCONCEL2, DDDCEL3, CEL3, PROCONCEL3, DDDCEL4, CEL4, 
-                PROCONCEL4, DDD1, FONE1, PROCON1, EMAIL1) 
+                NUMERO, COMPLEMENTO, BAIRRO, CIDADE, UF, CEP, DDDCEL1, CEL1) 
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             row.CPF, row.SETOR, row.CONVENIO, row.BANCO, row.NOME, row.SEXO, row.NASC, 
             row.IDADE, row.TIPO, row.LOGRADOURO, row.NUMERO, row.COMPLEMENTO, 
-            row.BAIRRO, row.CIDADE, row.UF, row.CEP, row.DDDCEL1, row.CEL1, 
-            row.PROCONCEL1, row.DDDCEL2, row.CEL2, row.PROCONCEL2, 
-            row.DDDCEL3, row.CEL3, row.PROCONCEL3, row.DDDCEL4, row.CEL4, 
-            row.PROCONCEL4, row.DDD1, row.FONE1, row.PROCON1, row.EMAIL1)
+            row.BAIRRO, row.CIDADE, row.UF, row.CEP, row.DDDCEL1, row.CEL1)
             
             # Incrementar o contador de registros existentes
             existing_records_count += 1
