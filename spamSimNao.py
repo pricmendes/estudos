@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 
+
 # Coleta de Pistas: Carregar o conjunto de dados
 # Exemplo fictício de dados. Quantos mais dados você incluir mais ele irá aprender a classificar como Spam.
 data = {
