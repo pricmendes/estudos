@@ -7,7 +7,7 @@ Este repositório contém todos os arquivos relacionados aos meus estudos. A ide
 ## 🧭 Índice 
 
 - [📚 Estudos](#estudos)
-  - [📁 Repositórios](#Repositórios)
+  - [📁 Repositórios](#repositórios)
 - [🐍 Python Lista de Tarefas e Outros Estudos](#python-lista-de-tarefas-e-outros-estudos)
   - [📂 Estrutura das Pastas e Arquivos](#estrutura-das-pastas-e-arquivos)
 - [🗂️ Gerenciador de Tarefas](#gerenciador-de-tarefas)
@@ -17,7 +17,7 @@ Este repositório contém todos os arquivos relacionados aos meus estudos. A ide
 
 ---
 
-### 📁 Repositórios:
+### 📁 [Repositórios](#repositórios)
 
 Aqui estão organizados os diferentes aspectos dos meus estudos, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
 
@@ -29,7 +29,7 @@ Aqui estão organizados os diferentes aspectos dos meus estudos, com links para 
 
 ---
 
-## 🐍 Python Lista de Tarefas e Outros Estudos:
+## 🐍 [Python Lista de Tarefas e Outros Estudos](#python-lista-de-tarefas-e-outros-estudos)
 
 Contém exemplos de código e módulos que abordam diversas funcionalidades e conceitos da linguagem Python, e uma lista de tarefas simples.
 
