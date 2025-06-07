@@ -19,7 +19,7 @@ Aqui estão organizados os diferentes aspectos dos meus estudos em Python, com l
 
 ---
 
-Sinta-se à vontade para explorar o repositório e acompanhar meu progresso nos estudos de Python. 
+Sinta-se à vontade para explorar o repositório e acompanhar meu progresso nos estudos. 
 Sugestões e feedbacks são sempre bem-vindos!
 
 📧 E-mail: [pricdados@gmail.com](mailto:pricdados@gmail.com)  
