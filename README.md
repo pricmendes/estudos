@@ -4,7 +4,7 @@ Este repositório contém todos os arquivos relacionados aos meus estudos. A ide
 
 ### Repositórios:
 
-Aqui estão organizados os diferentes aspectos dos meus estudos em Python, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
+Aqui estão organizados os diferentes aspectos dos meus estudos, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
 
   - [Airflow](https://github.com/pricmendes/estudos/blob/main/Airflow.md)
   - [Estrutura de Dados](https://github.com/pricmendes/estudos/blob/main/Estrutura_de_Dados.md)
