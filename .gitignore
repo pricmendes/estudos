@@ -15,3 +15,59 @@ ac2_logica.ipynb
 
 
 
+# Ambientes virtuais
+venv/
+.venv/
+env/
+.env/
+.vscode/
+.vs/
+
+# Python bytecode e cache
+__pycache__/
+.__pycache__/
+*.pyc
+*.pyo
+
+
+# Cache de testes
+.pytest_cache/
+.tox/
+coverage/
+*.cover
+*.log
+
+# Arquivos de log e temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Jupyter e arquivos de estudo temporários
+*.ipynb_checkpoints
+testes.ipynb
+ac2_logica.ipynb
+
+# Arquivos experimentais (nomes comuns de rascunho)
+TESTE.py
+teste.py
+testes.py
+tmp_*.py
+*_rascunho.py
+
+# Configs e credenciais (ajuste conforme o projeto)
+*.env
+.env.*
+
+# IDEs
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+.git/
+
+
