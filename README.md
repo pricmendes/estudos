@@ -27,7 +27,7 @@ Aqui estão organizados os diferentes aspectos dos meus estudos, com links para 
 
 ---
 
-https://github.com/pricmendes/estudos/edit/estudos/lista_tarefas_e_outros.md
+
 <a name="contato"></a>
 ## 📬 Contato:
 
