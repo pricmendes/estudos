@@ -38,6 +38,13 @@ Sugestões e feedbacks são sempre bem-vindos!
 
 ---
 
+### 🌐 Outros links úteis:
+
+- 🏠 [Voltar para a Página Inicial do Repositório](https://github.com/pricmendes/estudos)
+- 👤 [Sobre mim no GitHub](https://github.com/pricmendes)
+
+---
+
 [🔝 Voltar ao início](#-estudos) | [🔚 Ir ao final](#final)
 
 ---
