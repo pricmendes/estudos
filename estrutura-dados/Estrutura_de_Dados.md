@@ -78,6 +78,9 @@ Aqui irá conter algumas estruturas matemáticas usadas para modelar relações 
   
     [Voltar ao início](#) | [Ir ao final](#final)  
 
+---
+
+- 🏠 [Voltar para a Página Inicial do Repositório](https://github.com/pricmendes/estudos)
 
 ---
 <a name="final"></a>
