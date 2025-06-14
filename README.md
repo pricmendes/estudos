@@ -20,6 +20,7 @@ Este repositório contém todos os arquivos relacionados aos meus estudos. A ide
 Aqui estão organizados os diferentes aspectos dos meus estudos, com links para os arquivos relacionados. Cada link direciona para um documento que dá acesso aos arquivos correspondentes.
 
 - [🌀 Airflow](https://github.com/pricmendes/estudos/blob/estudos/Airflow.md)
+- [🗂️ DBT](https://github.com/pricmendes/estudos/tree/estudos/dbt)
 - [🧮 Estrutura de Dados](https://github.com/pricmendes/estudos/blob/estudos/estrutura-dados/Estrutura_de_Dados.md)
 - [🌍 API - Projeto Trip](https://github.com/pricmendes/estudos/blob/trip/README.md)
 - [🛒 API - Projeto Ecommerce](https://github.com/pricmendes/estudos/blob/ecommerce/README.md)
